@@ -5,7 +5,7 @@
 
 ## validations 
 *Email format
-*Password format (at least 1 digit, 1 uppercase, 1 lowercase, no space)
+*Password format (at least 1 digit, 1 uppercase, 1 lowercase, no space), besides, validate if email is already in use for creatng or updating a user.
 	
 
 
