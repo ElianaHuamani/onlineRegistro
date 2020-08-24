@@ -48,7 +48,7 @@ Use gradle and the comand : gradle bootRun
 				]
 			}
 			
-		PUT: se requiere ids para actualizar
+		PUT: Ids are required for updating (this is a validation inside the api)
 		
 			http://localhost:8080/v1/api/client
 			
