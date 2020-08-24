@@ -15,7 +15,8 @@
 * Intellij idea
 * Gradle
 * H2 
-	*BD url :http://localhost:8080/h2-console/login.jsp
+	*BD url :http://localhost:8080/h2-console/login.jsp (user=admin, password=admin, bd=onlineRegistro, all of this are specified in application.properties)
+	
 	*Db script is not needed, entities will create the scheme.
 * Springboot 2
 * Hibernate
