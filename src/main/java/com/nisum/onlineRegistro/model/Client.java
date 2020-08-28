@@ -36,7 +36,6 @@ public class Client {
     @Column(name="isActive")
     private String isActive;
 
-
     @OneToMany(mappedBy = "client", cascade = { CascadeType.ALL })
     private List<Phone> phones;
 

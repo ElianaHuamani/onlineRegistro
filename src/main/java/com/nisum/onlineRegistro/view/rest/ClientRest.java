@@ -2,7 +2,6 @@ package com.nisum.onlineRegistro.view.rest;
 
 import com.nisum.onlineRegistro.model.Client;
 import com.nisum.onlineRegistro.service.ClientService;
-import com.nisum.onlineRegistro.view.vo.ClientVO;
 import com.nisum.onlineRegistro.view.vo.ResponseVO;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,22 +19,18 @@ public class ClientRest {
 
     @GetMapping
     public ResponseVO<List<Client>> searchClients(){
-        System.out.println("REST searchClients:::");
         ResponseVO<List<Client>> clients = this.clientService.searchClients();
         return clients;
     }
 
     @PostMapping(consumes = "application/json", produces = "application/json")
     public ResponseVO<Client> createClient(@RequestBody Client client){
-        System.out.println("REST createClient");
         client.setId(null);
         ResponseVO<Client> responseVo = this.clientService.createClient(client);
-        System.out.println(responseVo.getMessage());
         return responseVo;
     }
     @PutMapping(consumes = "application/json", produces = "application/json")
     public ResponseVO<Client> editClient(@RequestBody Client client){
-        System.out.println("REST editClient:::");
         ResponseVO<Client> clientResult= this.clientService.editClient(client);
         return clientResult;
     }
